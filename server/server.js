@@ -12,7 +12,7 @@ async function startServer() {
   const app = express();
   
   app.use(cors({
-    origin: 'https://graphql-todo.vercel.app/',
+    origin: 'https://graphql-todo.vercel.app',
     methods: ['GET', 'POST', 'DELETE', 'PUT'],
   credentials: true
   }));
