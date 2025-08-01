@@ -18,7 +18,8 @@ async function startServer() {
     
   app.use(cors({
     origin: allowedOrigins,
-    credentials: true
+    methods: ['GET', 'POST', 'DELETE', 'PUT'],
+  credentials: true
   }));
   
   const server = new ApolloServer({
