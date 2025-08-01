@@ -11,13 +11,8 @@ require('dotenv').config();
 async function startServer() {
   const app = express();
   
-  // Configure CORS with environment variables
-  const allowedOrigins = process.env.ALLOWED_ORIGINS 
-    ? process.env.ALLOWED_ORIGINS.split(',')
-    : ['https://graphql-todo.vercel.app/', 'http://localhost:5173'];
-    
   app.use(cors({
-    origin: allowedOrigins,
+    origin: 'https://graphql-todo.vercel.app/',
     methods: ['GET', 'POST', 'DELETE', 'PUT'],
   credentials: true
   }));
