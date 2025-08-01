@@ -13,7 +13,7 @@ const config = {
   // 🚀 Production URLs (Update these when deploying)
   production: {
     GRAPHQL_URI: 'https://graphql-todo-qu78.vercel.app/graphql',
-    BACKEND_URL: 'https://graphql-todo-qu78.vercel.app/.app'
+    BACKEND_URL: 'https://graphql-todo-qu78.vercel.app'
   }
 };
 
